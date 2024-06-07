@@ -1,0 +1,37 @@
+<div id="<%= dom_id member %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= member.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Title:</strong>
+    <%= member.title %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Location:</strong>
+    <%= member.location %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Contact:</strong>
+    <%= member.contact %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Address:</strong>
+    <%= member.address %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Desription:</strong>
+    <%= member.desription %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Images:</strong>
+    <%= link_to member.images.filename, member.images if member.images.attached? %>
+  </p>
+
+</div>
